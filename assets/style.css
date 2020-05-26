@@ -22,8 +22,6 @@ a{
 
 a:hover{
     cursor: pointer;
-    transform: transformY(-10px);
-    transition: transform 1s linear;
     opacity: 1;
 }
 
@@ -45,6 +43,17 @@ header{
     padding: 35px 100px 0;
     opacity: 0;
     animation: fadein 1.5s 0.25s ease-in forwards;
+}
+
+@media (max-width: 800px){
+    header{
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+
+    header h2{
+        margin-bottom: 15px;
+    }
 }
 
 @keyframes fadein{
@@ -71,8 +80,22 @@ header h2 a{
 
 .main{
     /* position: relative; */
+    font: 20px "Chelsea Market", sans-serif;
     min-height: 100vh;
     justify-content: center;
+    text-align: center;
+}
+
+.main h1{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.main h3{
+    font: 20px "Chelsea Market", sans-serif;
 }
 
 .main .background-image{
@@ -81,7 +104,11 @@ header h2 a{
     left: 0;
     height: 100%;
     width: 100%;
+    background-color: black;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     z-index: -1;
 }
 
