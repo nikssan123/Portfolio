@@ -6,7 +6,14 @@
 
 html{
     font: normal 16px sans-serif;
-    color: #b8b7b2;
+    /* color: #b8b7b2; */
+    color: #fcfbfe;
+    scroll-behavior: smooth;
+}
+
+body{
+    /* background-color: #101010; */
+    background-color: #1D1135;
 }
 
 nav {
@@ -16,7 +23,8 @@ nav {
 a{
     text-decoration: none;
     opacity: 0.75;
-    color: #b8b7b2;
+    /* color: #b8b7b2; */
+    color: #fcfbfe;
     font: 18px "Montserrat", sans-serif;
 }
 
@@ -32,10 +40,34 @@ section{
     padding: 100px 80px;
 }
 
+section:not(.main):nth-child(odd){
+    /* background-color: #202020; */
+    background-color: #0C164F;
+}
+
+section h1{
+    font: 36px "Montserrat", sans-serif;
+}
+
+section p {
+    line-height: 2;
+    margin-bottom: 5px;
+}
+
+section hr{
+    width: 30vw;
+    height: 3px;
+    margin: 70px 0;
+    /* background-color: #78103f; */
+    /* background-color: #7649FE; */
+    background-color: #ba1e68;
+    border: 0;
+}
+
 /* Header */
 
 header{
-    position: absolute;
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -43,6 +75,19 @@ header{
     padding: 35px 100px 0;
     opacity: 0;
     animation: fadein 1.5s 0.25s ease-in forwards;
+}
+
+header h2{
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+header h2.animate {
+    transform: scale(0);
+}
+
+header h2:hover{
+    transform: scale(1.1);
 }
 
 @media (max-width: 800px){
@@ -79,11 +124,23 @@ header h2 a{
 /* Main Section */
 
 .main{
-    /* position: relative; */
     font: 20px "Chelsea Market", sans-serif;
     min-height: 100vh;
     justify-content: center;
     text-align: center;
+}
+
+.main-content-area{
+    margin-top: 50px;
+    opacity: 0;
+    animation: slidein 2s 0.25s ease-in forwards;
+}
+
+@keyframes slidein {
+    100%{
+        opacity: 1;
+        margin: 0;
+    }
 }
 
 .main h1{
@@ -122,6 +179,8 @@ header h2 a{
     height: 200px;
     position: fixed;
     bottom: -100px;
+    /* margin-bottom: -20px; */
+    /* margin-top: 50vh; */
     left: 50%;
     margin-left: -80px;
     z-index: 10;
@@ -152,8 +211,10 @@ header h2 a{
 .arrow > div{
     width: 36px;
     height: 36px;
-    border-right: 8px solid #b8b7b2;
-    border-bottom: 8px solid #b8b7b2;
+    /* border-right: 8px solid #b8b7b2; */
+    border-right: 8px solid #fcfbfe;
+    /* border-bottom: 8px solid #b8b7b2; */
+    border-bottom: 8px solid #fcfbfe;
     transform: rotate(-135deg);
 }
 
@@ -227,4 +288,115 @@ header h2 a{
     100%{
         opacity: 1;
     }
+}
+
+/* About me section */
+
+.about{
+    padding: 100px 80px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Projects section */
+
+.projects .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 1100px){
+    .projects .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 780px){
+    .projects .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.projects h2{
+    margin-bottom: 20px;
+}
+
+.projects .card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px minmax(210px, auto) 80px;
+    grid-template-areas: "image" "description" "buttons";
+
+    font-family: "Montserrat", sans-serif;
+    border-radius: 18px;
+    background-color: #5643FD;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin: 50px;
+
+    transition: all 1s ease;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px (0, 0, 0, 0.6);
+}
+
+.card .image{
+    grid-area: image;
+    background-image: url(img/img1.jpg);
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card .description {
+    grid-area: description;
+    margin: 25px;
+    line-height: 1;
+}
+
+.card .description p{
+    font-size: 15px;
+}
+
+.card .buttons{
+    grid-area: buttons;
+    background-color: #ba1e68;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+
+}
+
+.card .buttons > div{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card .buttons > div:first-child{
+    border-right: 1px solid #5643FD;
+}
+
+/* Contact Section */
+
+.contact{
+    height: 100vh;
+}
+
+/* Footer */
+
+footer{
+    height: 15vh;
+    background-color: #7649fe;
 }

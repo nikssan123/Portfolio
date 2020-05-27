@@ -6,25 +6,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    
+    
     <title>Document</title>
 </head>
 <body>
+    
     <header>
         <h2><a href="#">Nikolay Lyutov</a></h2>
         <nav>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+            <li><a onclick="about()">About</a></li>
+            <li><a onclick="projects()">Projects</a></li>
+            <li><a onclick="contact()">Contact</a></li>
         </nav>
-      </header>
-      
-      <section class="main">
+        </header>
+        
+        <!-- Main Section -->
+        <section class="main">
         <div class="background-image" style="background-image: url(assets/img/background.jpg);"></div>
         <div class="main-content-area">
-          <h1>Portfolio</h1>
-          <h3><em>"Creativity is intelligence having fun"</em></h3>
-          <p>- Albert Einstein</p>
-          <!-- <a href="#" class="btn">Contact Us Now</a> -->
+            <h1>Portfolio</h1>
+            <h3><em>"Creativity is intelligence having fun"</em></h3>
+            <p>- Albert Einstein</p>
+            <!-- <a href="#" class="btn">Contact Us Now</a> -->
         </div>
 
         <div class="scroll">
@@ -37,6 +42,79 @@
                 </div>
             </div>
         </div>
+        </section>
+    
+    
+
+      <!-- About me section -->
+      <section class="about">
+          <h1>About me</h1>
+          <hr>
       </section>
+
+      <section class="projects">
+        <h1>Projects</h1>
+        <hr>
+
+        <div class="container">
+            <div class="card">
+                <div class="image"></div>
+                <div class="description">
+                    <h2>Project 1</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi autem optio magnam asperiores ab? Expedita!</p>
+                </div>
+                <div class="buttons">
+                    <div class="code">Code</div>
+                    <div class="demo">Live Demo</div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="image"></div>
+                <div class="description">
+                    <h2>Project 2</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi autem optio magnam asperiores ab? Expedita!</p>
+                </div>
+                <div class="buttons">
+                    <div class="code">Code</div>
+                    <div class="demo">Live Demo</div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="image"></div>
+                <div class="description">
+                    <h2>Project 3</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi autem optio magnam asperiores ab? Expedita!</p>
+                </div>
+                <div class="buttons">
+                    <div class="code">Code</div>
+                    <div class="demo">Live Demo</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image"></div>
+                <div class="description">
+                    <h2>Project 4</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi autem optio magnam asperiores ab? Expedita!</p>
+                </div>
+                <div class="buttons">
+                    <div class="code">Code</div>
+                    <div class="demo">Live Demo</div>
+                </div>
+            </div>
+        </div>
+        
+      </section>
+
+      <section class="contact">
+        <h1>Contact Me</h1>
+        <hr>
+      </section>
+
+      <footer></footer>
+
+      <script src="assets/script.js"></script>
 </body>
 </html>
