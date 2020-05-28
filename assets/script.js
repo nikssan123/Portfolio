@@ -1,7 +1,9 @@
 $(window).on("scroll", () => {
     
+    // let height = window.height();
+    // console.log(height);
     let yOffset = window.pageYOffset;
-    if(yOffset > 80){
+    if(yOffset > 20){
         $(".scroll").css("display", "none");
         
     }
