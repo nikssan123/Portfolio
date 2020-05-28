@@ -1,3 +1,8 @@
+/* 
+----------------------
+FIX THE FONTS 
+----------------------
+*/
 * {
     margin: 0;
     padding: 0;
@@ -57,17 +62,49 @@ section p {
 section hr{
     width: 30vw;
     height: 3px;
-    margin: 70px 0;
+    margin: 50px 0;
     /* background-color: #78103f; */
     /* background-color: #7649FE; */
     background-color: #ba1e68;
     border: 0;
 }
 
+/* Side menu */
+
+.sidemenu{
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 50%;
+    opacity: 0;
+    
+}
+
+@keyframes slideup{
+    100%{
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    margin: 33px;
+}
+
+.add{
+    animation: slideup 1.5s 0.25s ease forwards;
+}
+
 /* Header */
 
 header{
     position: fixed;
+
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -124,7 +161,7 @@ header h2 a{
 /* Main Section */
 
 .main{
-    font: 20px "Chelsea Market", sans-serif;
+    font: 20px "Tenali Ramakrishna", sans-serif;
     min-height: 100vh;
     justify-content: center;
     text-align: center;
@@ -151,8 +188,9 @@ header h2 a{
 
 }
 
-.main h3{
-    font: 20px "Chelsea Market", sans-serif;
+.main h1{
+    /* font-family: "Tenali Ramakrishna"; */
+    font-family: "Chelsea Market";
 }
 
 .main .background-image{
@@ -327,7 +365,7 @@ header h2 a{
 .projects .card{
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 210px minmax(210px, auto) 80px;
+    grid-template-rows: 210px minmax(210px, auto) minmax(80px, auto);
     grid-template-areas: "image" "description" "buttons";
 
     font-family: "Montserrat", sans-serif;
@@ -335,7 +373,7 @@ header h2 a{
     background-color: #5643FD;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
-    margin: 50px;
+    margin: 30px 60px 40px;
 
     transition: all 1s ease;
 }
@@ -343,6 +381,11 @@ header h2 a{
 .card:hover{
     transform: scale(1.2);
     box-shadow: 5px 5px 15px (0, 0, 0, 0.6);
+}
+
+.card img{
+    width: 25px;
+    height: 25px;
 }
 
 .card .image{
@@ -369,23 +412,47 @@ header h2 a{
     grid-area: buttons;
     background-color: #ba1e68;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
-
 }
 
-.card .buttons > div{
+.card .buttons p{
+    line-height: 1;
+}
+
+.card .buttons > div:not(.stack){
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
     align-items: center;
     cursor: pointer;
 }
 
-.card .buttons > div:first-child{
+.card .buttons > div:not(.stack):hover p{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+.card .buttons > div:nth-child(2){
     border-right: 1px solid #5643FD;
+    border-left: 1px solid #5643FD;
+}
+
+.card .stack{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    
+}
+
+.card .stack p{
+    flex-basis: 100%;
+    margin-bottom: 0;
 }
 
 /* Contact Section */

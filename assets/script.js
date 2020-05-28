@@ -7,8 +7,8 @@ $(window).on("scroll", () => {
     }
     
     if(yOffset > 100){
-        $("nav").fadeOut(500 , () => {
-        });
+        $("nav").fadeOut(500);
+        $(".sidemenu").addClass("add");
         $("header h2").addClass("animate");
     }
     
@@ -16,8 +16,8 @@ $(window).on("scroll", () => {
 
     if(yOffset === 0){
         $(".scroll").css("display", "block");
-        $("nav").fadeIn("slow", () => {
-        });
+        $("nav").fadeIn("slow");
+        $(".sidemenu").removeClass("add");
         $("header h2").removeClass("animate");
     }
 });
@@ -46,3 +46,4 @@ $(".buttons .code").on("click", () => {
 $(".buttons .demo").on("click", () => {
     alert("Show demo");
 });
+
