@@ -1,3 +1,36 @@
+const nameInput = $("#name");
+const emailInput = $("#email");
+const phoneInput = $("#phone");
+const messageInput = $("#message");
+
+
+
+let name = sessionStorage.getItem("name");
+let email = sessionStorage.getItem("email");
+let phone = sessionStorage.getItem("phone");
+let message = sessionStorage.getItem("message");
+
+nameInput.val(name);
+emailInput.val(email);
+phoneInput.val(phone);
+messageInput.val(message);
+
+nameInput.on("change", () => {
+    sessionStorage.setItem("name", nameInput.val());
+});
+
+emailInput.on("change", () => {
+    sessionStorage.setItem("email", emailInput.val());
+});
+
+phoneInput.on("change", () => {
+    sessionStorage.setItem("phone", phoneInput.val());
+});
+
+messageInput.on("change", () => {
+    sessionStorage.setItem("message", messageInput.val());
+});
+
 $(window).on("scroll", () => {
     
     // let height = window.height();
