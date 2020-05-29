@@ -11,13 +11,11 @@ FIX THE FONTS
 
 html{
     font: normal 16px sans-serif;
-    /* color: #b8b7b2; */
     color: #fcfbfe;
     scroll-behavior: smooth;
 }
 
 body{
-    /* background-color: #101010; */
     background-color: #1D1135;
 }
 
@@ -28,7 +26,6 @@ nav {
 a{
     text-decoration: none;
     opacity: 0.75;
-    /* color: #b8b7b2; */
     color: #fcfbfe;
     font: 18px "Montserrat", sans-serif;
 }
@@ -156,8 +153,8 @@ header nav li{
 }
 
 header h2 a{
-    font-size: 24px;
-    font-weight: 500;
+    font-weight: 800;
+    font: 24px "Orbitron", sans-serif;
 }
 
 /* Main Section */
@@ -591,8 +588,54 @@ header h2 a{
 
 /* Contact Section */
 
-.contact{
+/* .contact{
     height: 100vh;
+} */
+
+.form-container{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: 100%;
+    max-width: 775px;
+    
+}
+
+.form-input{
+    display: block;
+    width: 100%;
+    border-radius: 18px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #0C164F;
+    border: none;
+    outline: none;
+    color: #fcfbfe;
+    /* box-shadow: 0px; */
+}
+
+input, select, textarea{
+    color: #fcfbfe;
+    font: 18px "Montserrat", sans-serif;
+}
+
+.input:focus, textarea:focus{
+    color: #fcfbfe;
+    font: 18px "Montserrat", sans-serif;
+}
+
+.form-button{
+    float: right;
+    border: none;
+    color: #fcfbfe;
+    font: 18px "Montserrat", sans-serif;
+    padding: 10px 70px;
+}
+
+::placeholder{
+    color: #fcfbfe;
+    font: 18px "Montserrat", sans-serif;
+    opacity: 0.8;
 }
 
 /* Footer */

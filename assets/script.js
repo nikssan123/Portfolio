@@ -8,7 +8,7 @@ $(window).on("scroll", () => {
         
     }
     
-    if(yOffset > 100){
+    if(yOffset > 80){
         $("nav").fadeOut(500);
         $(".sidemenu").addClass("add");
         $("header h2").addClass("animate");
