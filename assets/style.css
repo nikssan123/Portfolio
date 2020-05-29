@@ -611,7 +611,12 @@ header h2 a{
     border: none;
     outline: none;
     color: #fcfbfe;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     /* box-shadow: 0px; */
+}
+
+.form-input:focus{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 input, select, textarea{
@@ -643,6 +648,10 @@ input, select, textarea{
 footer{
     height: 15vh;
     background-color: #7649fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 18px "Montserrat", sans-serif;
 }
 
 /* Media queries */
