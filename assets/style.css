@@ -531,8 +531,8 @@ header h2 a{
 }
 
 .hex-container{
-    -webkit-animation: shake 7.5s linear infinite;
-            animation: shake 7.5s linear infinite;
+    /* -webkit-animation: shake 7.5s linear infinite;
+            animation: shake 7.5s linear infinite; */
 }
 
 .about .hex-container1:hover .hex1 {
@@ -661,6 +661,9 @@ header h2 a{
     text-align: center;
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     line-height: 1;
     font-size: 14px;
 }
