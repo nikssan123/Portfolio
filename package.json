@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Nikolay Lyutov's portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikssan123/Portfolio.git"
+  },
+  "author": "Nikolay Lyutov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikssan123/Portfolio/issues"
+  },
+  "homepage": "https://github.com/nikssan123/Portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

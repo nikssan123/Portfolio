@@ -668,20 +668,6 @@ header h2 a{
     font-size: 14px;
 }
 
-/* @media (max-width: 1270px){
-    .about .inner-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
-        column-gap: 10px;
-    }
-
-    .hex:nth-child(3){
-        margin-top: 200px;
-    }
-
-} */
-
 /* Projects section */
 
 .projects .container{
