@@ -156,10 +156,14 @@ header{
 
 
 header h2{
-    opacity: 1;
+    
     -webkit-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
+}
+
+header h2 a{
+    opacity: 1;
 }
 
 header h2.animate {
