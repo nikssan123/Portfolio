@@ -19,9 +19,9 @@
 
     <div class="sidemenu">
         <ul class="menu">
-            <li><a><i class="fa fa-facebook"></i></a></li>
-            <li><a><i class="fa fa-instagram"></i></a></li>
-            <li><a><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.facebook.com/nikolay.lyutov" target="blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/nikssan123/" target="blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/nikssan123" target="blank"><i class="fa fa-github"></i></a></li>
             <!-- <li><a><i class="fa fa-linkedin"></i></a></li> -->
         </ul>
     </div>
@@ -64,18 +64,24 @@
       <section class="about">
             <h1>About me</h1>
             <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aspernatur, repudiandae corrupti tempore quos ipsa accusantium animi accusamus explicabo praesentium, incidunt quia ad sequi? Esse, tempore nostrum facere, quibusdam illum commodi quo accusamus ex amet vel doloremque est, laborum vero dolorum voluptas ab dicta delectus ipsum similique? Facere, corrupti fugiat!</p>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aspernatur, repudiandae corrupti tempore quos ipsa accusantium animi accusamus explicabo praesentium, incidunt quia ad sequi? Esse, tempore nostrum facere, quibusdam illum commodi quo accusamus ex amet vel doloremque est, laborum vero dolorum voluptas ab dicta delectus ipsum similique? Facere, corrupti fugiat!</p> -->
+            <p>Hello, my name is <span class="bold">Nikolay Lyutov</span> and I'm from Varna, Bulgaria. Currently, I'm a junior <span class="bold">Computer Science student</span> in the American University in Bulgaria (AUBG). Personally, I'm always striving to be the best and always aiming high!</p>
             <a href="#" class="btn">View CV</a>
 
             
             <!-- Hexagons -->
             <div class="inner-container">
-                <h3>Achievements</h3>
+                <h3>Interesting facts</h3>
                 <div class="hex-container hex-container1">
                     <div class="hex hex1">
                         <div class="text">
-                            <h1>Test</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p>
+                            <h1>Achievements:</h1>
+                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p> -->
+                            <ul class="list">
+                                <li>CGPA: 3.83</li>
+                                <li>Dean's List</li>
+                                <li>President's List</li>
+                            </ul>
                         </div>
                         <div class="back">
                             <h1>Test</h1>
@@ -87,8 +93,21 @@
                 <div class="hex-container hex-container2">
                     <div class="hex hex2">
                         <div class="text">
-                            <h1>Test</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p>
+                            <h1>Skills:</h1>
+                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p> -->
+                            <div class="text-container">
+                                <ul class="list">
+                                    <li>HTML5/CSS3</li>
+                                    <li>JavaScript</li>
+                                    <li>NodeJS</li>
+                                </ul>
+                                <ul class="list">
+                                    <li>C++</li>
+                                    <li>MongoDB</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </div>
+                            
                         </div>
                         <div class="back">
                             <h1>Test</h1>
@@ -100,8 +119,13 @@
                 <div class="hex-container hex-container3">
                     <div class="hex hex3">
                         <div class="text">
-                            <h1>Test</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p>
+                            <h1>Hobbies:</h1>
+                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p> -->
+                            <ul class="list">
+                                <li>Programming</li>
+                                <li>Astronomy</li>
+                                <li>Video Gaming</li>
+                            </ul>
                         </div>
                         <div class="back">
                             <h1>Test</h1>
@@ -230,10 +254,10 @@
         <hr>
 
         <form class="form-container" action="/mail" method="POST">
-            <input id="name" type="text" name="name" class="form-input" placeholder="Your Name">
-            <input id="email" type="email" name="mail" class="form-input" placeholder="Your Email">
+            <input id="name" type="text" name="name" class="form-input" placeholder="Your Name" required autofocus>
+            <input id="email" type="email" name="mail" class="form-input" placeholder="Your Email" required>
             <input id="phone" type="" name="phone" class="form-input" placeholder="Your Phone">
-            <textarea id="message" name="message" class="form-input" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea id="message" name="message" class="form-input" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send" class="form-button btn">
         </form>
       </section>

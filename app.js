@@ -32,7 +32,7 @@ app.post("/mail", (req, res) => {
         to: "nikssan123@gmail.com",
         from: "fornax.elit@gmail.com",
         subject: req.body.name + " wants to connect!",
-        text: "Email: " + req.body.email + "\nPhone: " + req.body.phone + "\nMessage: " + req.body.message
+        text: "Email: " + req.body.mail + "\nPhone: " + req.body.phone + "\nMessage: " + req.body.message
     };
     
     //send the actual mail

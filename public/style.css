@@ -91,6 +91,10 @@ section hr{
     opacity: 0.7;
 }
 
+.bold{
+    font-weight: 800;
+}
+
 /* Side menu */
 
 .sidemenu{
@@ -490,6 +494,10 @@ header h2 a{
 
 /* About me section */
 
+.about .text-container{
+    display: flex;
+    flex-basis: 50%;
+}
 
 .about p{
     text-align: center;
@@ -497,6 +505,22 @@ header h2 a{
     padding: 0 20px;
     margin-bottom: 40px;
     line-height: 2.5;
+}
+
+.about .list li{
+    list-style: none;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 20px;
+    font: 18px "Montserrat", sans-serif;;
+}
+
+.about .list li:first-child{
+    margin-top: 30px;
+}
+
+.about h1{
+    font-size: 24px;
 }
 
 .about h3{
