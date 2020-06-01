@@ -848,6 +848,27 @@ header h2 a{
     margin-bottom: 0;
 }
 
+/* Testimonial Section */
+
+.testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials p {
+    max-width: 775px;
+    text-align: center;
+}
+
+.testimonials .quote{
+    font-family: "Chelsea Market";
+    line-height: 1.5;
+    font-size: 22px;
+    margin: 40px 0 25px;
+}
+
+
 /* Contact Section */
 
 

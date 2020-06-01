@@ -82,6 +82,10 @@ function contact(){
     $(".contact").get(0).scrollIntoView();
 }
 
+function testimonials(){
+    $(".testimonials").get(0).scrollIntoView();
+}
+
 $(".buttons .code").on("click", () => {
     alert("Show code");
 });
