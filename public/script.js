@@ -2,6 +2,8 @@ const nameInput = $("#name");
 const emailInput = $("#email");
 const phoneInput = $("#phone");
 const messageInput = $("#message");
+const modal = $(".modal");
+
 
 
 
@@ -45,6 +47,10 @@ $(window).on("scroll", () => {
         $("nav").fadeOut(500);
         $(".sidemenu").addClass("add");
         $("header h2").addClass("animate");
+        
+        // Test for logo
+        // $(".custom").css("display", "block"); 
+        $(".custom").addClass("logoAnimation");
     }
     
 
@@ -54,6 +60,8 @@ $(window).on("scroll", () => {
         $("nav").fadeIn("slow");
         $(".sidemenu").removeClass("add");
         $("header h2").removeClass("animate");
+        // $(".custom").css("display", "none"); 
+        $(".custom").removeClass("logoAnimation");
     }
 });
 
@@ -81,4 +89,30 @@ $(".buttons .code").on("click", () => {
 $(".buttons .demo").on("click", () => {
     alert("Show demo");
 });
+
+// Modals
+
+window.onclick = event => {
+    if($(event.target).is(modal) ){
+        modal.css("display", "none");
+    }
+}
+
+const cvModal = $("div#cvDIV");
+const gpaModal = $("div#gpaDIV");
+const deanModal = $("div#deanDIV");
+
+
+function viewCV(){
+    cvModal.css("display", "flex");
+}   
+
+$("#gpa").on("click", () => {
+    gpaModal.css("display", "flex");
+});
+
+$("#dean").on("click", () => {
+    deanModal.css("display", "flex");
+});
+
 

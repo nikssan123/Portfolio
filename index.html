@@ -15,19 +15,23 @@
     
     <title>Document</title>
 </head>
+
 <body>
 
     <div class="sidemenu">
         <ul class="menu">
             <li><a href="https://www.facebook.com/nikolay.lyutov" target="blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/nikolay-lyutov-52b9931a8/" target="blank"><i class="fa fa-linkedin"></i></a></li>
             <li><a href="https://www.instagram.com/nikssan123/" target="blank"><i class="fa fa-instagram"></i></a></li>
             <li><a href="https://github.com/nikssan123" target="blank"><i class="fa fa-github"></i></a></li>
             <!-- <li><a><i class="fa fa-linkedin"></i></a></li> -->
         </ul>
     </div>
     
+
+    <a href="#"><i class="fa fa-facebook custom"></i></a> 
     <header>
-        <h2><a href="#">Nikolay Lyutov</a></h2>
+        <h2><i class="fa fa-facebook"></i><a href="#"> Nikolay Lyutov</a></h2>
         <nav>
             <li><a onclick="about()">About</a></li>
             <li><a onclick="projects()">Projects</a></li>
@@ -65,8 +69,8 @@
             <h1>About me</h1>
             <hr>
             <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aspernatur, repudiandae corrupti tempore quos ipsa accusantium animi accusamus explicabo praesentium, incidunt quia ad sequi? Esse, tempore nostrum facere, quibusdam illum commodi quo accusamus ex amet vel doloremque est, laborum vero dolorum voluptas ab dicta delectus ipsum similique? Facere, corrupti fugiat!</p> -->
-            <p>Hello, my name is <span class="bold">Nikolay Lyutov</span> and I'm from Varna, Bulgaria. Currently, I'm a junior <span class="bold">Computer Science student</span> in the American University in Bulgaria (AUBG). Personally, I'm always striving to be the best and always aiming high!</p>
-            <a href="#" class="btn">View CV</a>
+            <p>Hello, my name is <span class="bold">Nikolay Lyutov</span> and I'm from Varna, Bulgaria. Currently, I'm a junior <span class="bold">Computer Science student</span> in the American University in Bulgaria (AUBG). Personally, I'm always striving to be the best and always aiming high! Moreover, I'm eagerly looking forward for new opportunities and challenges and I'm impatient to find what the near future will unfold. </p>
+            <a onclick="viewCV()" class="btn">View CV</a>
 
             
             <!-- Hexagons -->
@@ -78,14 +82,17 @@
                             <h1>Achievements:</h1>
                             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p> -->
                             <ul class="list">
-                                <li>CGPA: 3.83</li>
+                                <li>CGPA: 3.87</li>
                                 <li>Dean's List</li>
                                 <li>President's List</li>
                             </ul>
                         </div>
                         <div class="back">
-                            <h1>Test</h1>
-                            <p>Lorem ipsum dolor quibusdam minima, tempore perspiciatis qui et aspernatur! debitis inventore repellendus eum.</p>
+                            <ul class="list">
+                                <li class="pointer" id="gpa">See GPA per semester</li>
+                                <li class="pointer" id="dean">Named for Dean's list for Fall 2019 and Spring 2020 semesters</li>
+                                <li class="pointer">Named for President's list for Spring 2020 semesters</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -94,18 +101,30 @@
                     <div class="hex hex2">
                         <div class="text">
                             <h1>Skills:</h1>
-                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p> -->
                             <div class="text-container">
                                 <ul class="list">
-                                    <li>HTML5/CSS3</li>
+                                    <li>HTML5/CSS3/JS</li>
+                                    <li>NodeJS</li>
+                                    <li>Java</li>
+                                </ul>
+                                <ul class="list">
+                                    <li>C++</li>
+                                    <li>SQL</li>
+                                    <li>MongoDB</li>
+                                </ul>
+
+                                <!-- <ul class="list">
+                                    <li>HTML5</li>
+                                    <li>CSS3<li>
                                     <li>JavaScript</li>
                                     <li>NodeJS</li>
                                 </ul>
                                 <ul class="list">
+                                    <li>Java</li>
                                     <li>C++</li>
                                     <li>MongoDB</li>
                                     <li>SQL</li>
-                                </ul>
+                                </ul> -->
                             </div>
                             
                         </div>
@@ -134,48 +153,6 @@
                     </div>
                 </div>
             </div> <!-- .inner-container -->
-
-            <!-- <div class="inner-container">
-                <h3>Hobbies</h3>
-                <div class="hex-container hex-container1">
-                    <div class="hex hex1">
-                        <div class="text">
-                            <h1>Test</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p>
-                        </div>
-                        <div class="back">
-                            <h1>Test</h1>
-                            <p>Lorem ipsum dolor quibusdam minima, tempore perspiciatis qui et aspernatur! debitis inventore repellendus eum.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hex-container hex-container2">
-                    <div class="hex hex2">
-                        <div class="text">
-                            <h1>Test</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p>
-                        </div>
-                        <div class="back">
-                            <h1>Test</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo pariatur fugit fugiat modi!</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hex-container hex-container3">
-                    <div class="hex hex3">
-                        <div class="text">
-                            <h1>Test</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p>
-                        </div>
-                        <div class="back">
-                            <h1>Test</h1>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga eveniet velit vel delectus nam?</p>
-                        </div>
-                    </div>
-                </div>
-            </div> .inner-container -->
         </section>
 
       <section class="projects">
@@ -254,7 +231,7 @@
         <hr>
 
         <form class="form-container" action="/mail" method="POST">
-            <input id="name" type="text" name="name" class="form-input" placeholder="Your Name" required autofocus>
+            <input id="name" type="text" name="name" class="form-input" placeholder="Your Name" required>
             <input id="email" type="email" name="mail" class="form-input" placeholder="Your Email" required>
             <input id="phone" type="" name="phone" class="form-input" placeholder="Your Phone">
             <textarea id="message" name="message" class="form-input" cols="30" rows="10" placeholder="Your Message" required></textarea>
@@ -263,6 +240,26 @@
       </section>
 
       <footer>Copyright &copy; 2020 "Nikolay Lyutov" All rights reserved  </footer>
+
+      <!-- Modals -->
+
+      <div id="cvDIV" class="modal">
+        <div class="model-content">
+            <iframe src="public/pdf/cv.pdf" ></iframe>
+        </div>
+      </div>
+
+      <div id="gpaDIV" class="modal">
+        <div class="model-content">
+            <iframe src="public/pdf/transcript.pdf" ></iframe>
+        </div>
+      </div>
+
+      <div id="deanDIV" class="modal">
+        <div class="model-content">
+            <iframe src="public/pdf/dean.pdf" ></iframe>
+        </div>
+      </div>
 
       <script src="public/script.js"></script>
 </body>
