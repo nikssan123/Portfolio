@@ -7,7 +7,7 @@
 
 /* 
 ----------------------
-ADD TESTEMONIALS SECTION ==> Citing profs. rec. letters
+
 ----------------------
 */
 * {
@@ -523,9 +523,9 @@ header h2 a{
     margin-top: 30px;
 }
 
-.about h1{
+/* .about h1{
     font-size: 24px;
-}
+} */
 
 .about h3{
     -ms-grid-column-span: 5;
@@ -677,7 +677,12 @@ header h2 a{
     transform: translateY(-30px);
 } */
 
-.hex .back h1{
+.hex .text h1{
+    font-size: 26px;
+}
+
+
+/* .hex .back h1{
     -webkit-transform: translateY(-35px);
         -ms-transform: translateY(-35px);
             transform: translateY(-35px);
@@ -687,7 +692,7 @@ header h2 a{
     -webkit-transform: translateY(-35px);
         -ms-transform: translateY(-35px);
             transform: translateY(-35px);
-}
+} */
 
 .back{
     display: block;
@@ -699,6 +704,14 @@ header h2 a{
     -moz-backface-visibility: hidden;
     line-height: 1;
     font-size: 14px;
+}
+
+.back p{
+    line-height: 1.5;
+}
+
+.back p #udemy{
+    font-weight: bold;
 }
 
 /* Projects section */
@@ -756,7 +769,12 @@ header h2 a{
 
 .card .image{
     grid-area: image;
-    background-image: url(img/img1.jpg);
+    /* background-image: url(img/img1.jpg); */
+
+    /* background: rgb(0, 0, 0); */
+    background: linear-gradient(rgba(14,5,97,0.6), rgba(79,12,34,0.6)), url(img/img1.jpg);
+    /* background: linear-gradient(rgba(29,38,113,0.6), rgba(195,55,100,0.6)), url(img/img1.jpg); */
+
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
     background-repeat: no-repeat;
@@ -1051,7 +1069,8 @@ footer{
     }
 
     .about p{
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 2;
     }
 
     header{
@@ -1066,7 +1085,9 @@ footer{
         margin-bottom: 15px;
     }
 
-    
+    .testimonials .quote{
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 580px){
@@ -1082,6 +1103,14 @@ footer{
         font-size: 14px;
     }
 
+    .main h1{
+        font-size: 26px;
+    }
+
+    .main h3{
+        font-size: 14px;
+    }
+
     /* header{
         animation: fadein 0s forwards;
     } */
@@ -1089,6 +1118,14 @@ footer{
     .about p{
         padding: 0;
         /* font-size: 12px; */
+    }
+
+    .logo{
+        left: -30px;
+    }
+
+    .sidemenu{
+        right: -20px;
     }
 }
 
@@ -1123,17 +1160,25 @@ footer{
 }
 
 /* Test for logo */
-.custom{
+.logo{
     position: fixed;
     top:75px;
-    left: 0;
     opacity: 0;
-    transition: all 1.5s 0.25 ease;
+    /* transition: all 1.5s 0.25 ease; */
+    z-index: 1002;
 }
 
-.custom.logoAnimation{
-    transform: translateX(50px);
-    opacity: 1;
+.logoAnimation{
+    /* transform: translateX(50px);
+    opacity: 1; */
+    animation: logo 1.5s 0.25s ease forwards;
+}
+
+@keyframes logo{
+    100%{
+        transform: translateX(50px);
+        opacity: 1;
+    }
 }
 
 

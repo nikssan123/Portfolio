@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="public/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
@@ -29,19 +30,19 @@
     </div>
     
 
-    <a href="#"><i class="fa fa-facebook custom"></i></a> 
+    <a href="#"><i class="fa fa-facebook logo"></i></a> 
     <header>
         <h2><i class="fa fa-facebook"></i><a href="#"> Nikolay Lyutov</a></h2>
         <nav>
             <li><a onclick="about()">About</a></li>
             <li><a onclick="projects()">Projects</a></li>
-            <li><a onclick="testimonials()">Testimonials</a></li>
+            <!-- <li><a onclick="testimonials()">Testimonials</a></li> -->
             <li><a onclick="contact()">Contact</a></li>
         </nav>
-        </header>
+    </header>
         
         <!-- Main Section -->
-        <section class="main">
+    <section class="main">
         <div class="background-image" style="background-image: url(public/img/background.jpg);"></div>
         <div class="main-content-area">
             <!-- <h1>Portfolio</h1> -->
@@ -61,102 +62,90 @@
                 </div>
             </div>
         </div>
-        </section>
+    </section>
     
     
 
       <!-- About me section -->
-      <section class="about">
-            <h1>About me</h1>
-            <hr>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aspernatur, repudiandae corrupti tempore quos ipsa accusantium animi accusamus explicabo praesentium, incidunt quia ad sequi? Esse, tempore nostrum facere, quibusdam illum commodi quo accusamus ex amet vel doloremque est, laborum vero dolorum voluptas ab dicta delectus ipsum similique? Facere, corrupti fugiat!</p> -->
-            <p>Hello, my name is <span class="bold">Nikolay Lyutov</span> and I'm from Varna, Bulgaria. Currently, I'm a junior <span class="bold">Computer Science student</span> in the American University in Bulgaria (AUBG). Personally, I'm always striving to be the best and always aiming high! Moreover, I'm eagerly looking forward for new opportunities and challenges and I'm impatient to find what the near future will unfold. </p>
-            <a onclick="viewCV()" class="btn">View CV</a>
+    <section class="about">
+        <h1>About me</h1>
+        <hr>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aspernatur, repudiandae corrupti tempore quos ipsa accusantium animi accusamus explicabo praesentium, incidunt quia ad sequi? Esse, tempore nostrum facere, quibusdam illum commodi quo accusamus ex amet vel doloremque est, laborum vero dolorum voluptas ab dicta delectus ipsum similique? Facere, corrupti fugiat!</p> -->
+        <p>Hello, my name is <span class="bold">Nikolay Lyutov</span> and I'm from Varna, Bulgaria. Currently, I'm a junior <span class="bold">Computer Science student</span> in the American University in Bulgaria (AUBG). Personally, I'm always striving to be the best and always aiming high! Moreover, I'm eagerly looking forward for new opportunities and challenges and I'm impatient to find what the near future will unfold. </p>
+        <a onclick="viewCV()" class="btn">View CV</a>
 
+        
+        <!-- Hexagons -->
+        <div class="inner-container">
+            <h3>Interesting facts</h3>
+            <div class="hex-container hex-container1">
+                <div class="hex hex1">
+                    <div class="text">
+                        <h1>Achievements:</h1>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p> -->
+                        <ul class="list">
+                            <li>CGPA: 3.87</li>
+                            <li>Dean's List</li>
+                            <li>President's List</li>
+                        </ul>
+                    </div>
+                    <div class="back">
+                        <ul class="list">
+                            <li class="pointer" id="gpa">See GPA per semester</li>
+                            <li class="pointer" id="dean">Named for Dean's list for Fall 2019 and Spring 2020 semesters</li>
+                            <li class="pointer">Named for President's list for Spring 2020 semesters</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             
-            <!-- Hexagons -->
-            <div class="inner-container">
-                <h3>Interesting facts</h3>
-                <div class="hex-container hex-container1">
-                    <div class="hex hex1">
-                        <div class="text">
-                            <h1>Achievements:</h1>
-                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p> -->
+            <div class="hex-container hex-container2">
+                <div class="hex hex2">
+                    <div class="text">
+                        <h1>Skills:</h1>
+                        <div class="text-container">
                             <ul class="list">
-                                <li>CGPA: 3.87</li>
-                                <li>Dean's List</li>
-                                <li>President's List</li>
+                                <li>HTML5/CSS3/JS</li>
+                                <li>NodeJS</li>
+                                <li>Java</li>
+                            </ul>
+                            <ul class="list">
+                                <li>C++</li>
+                                <li>SQL</li>
+                                <li>MongoDB</li>
                             </ul>
                         </div>
-                        <div class="back">
-                            <ul class="list">
-                                <li class="pointer" id="gpa">See GPA per semester</li>
-                                <li class="pointer" id="dean">Named for Dean's list for Fall 2019 and Spring 2020 semesters</li>
-                                <li class="pointer">Named for President's list for Spring 2020 semesters</li>
-                            </ul>
-                        </div>
+                        
+                    </div>
+                    <div class="back">
+                        <!-- <h1>Test</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo pariatur fugit fugiat modi!</p> -->
+                        <p>The core knowledge of computing, programming and algorithms I acquired from my University. However, in my free time I expanded my practical knowledge with the help of sites like <span class="pointer" id="udemy">Udemy</span> and Youtube.</p>
                     </div>
                 </div>
-                
-                <div class="hex-container hex-container2">
-                    <div class="hex hex2">
-                        <div class="text">
-                            <h1>Skills:</h1>
-                            <div class="text-container">
-                                <ul class="list">
-                                    <li>HTML5/CSS3/JS</li>
-                                    <li>NodeJS</li>
-                                    <li>Java</li>
-                                </ul>
-                                <ul class="list">
-                                    <li>C++</li>
-                                    <li>SQL</li>
-                                    <li>MongoDB</li>
-                                </ul>
+            </div>
+            
+            <div class="hex-container hex-container3">
+                <div class="hex hex3">
+                    <div class="text">
+                        <h1>Hobbies:</h1>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p> -->
+                        <ul class="list">
+                            <li>Programming</li>
+                            <li>Astronomy</li>
+                            <li>Video Gaming</li>
+                        </ul>
+                    </div>
+                    <div class="back">
+                        <h1>Test</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga eveniet velit vel delectus nam?</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .inner-container -->
+    </section>
 
-                                <!-- <ul class="list">
-                                    <li>HTML5</li>
-                                    <li>CSS3<li>
-                                    <li>JavaScript</li>
-                                    <li>NodeJS</li>
-                                </ul>
-                                <ul class="list">
-                                    <li>Java</li>
-                                    <li>C++</li>
-                                    <li>MongoDB</li>
-                                    <li>SQL</li>
-                                </ul> -->
-                            </div>
-                            
-                        </div>
-                        <div class="back">
-                            <h1>Test</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo pariatur fugit fugiat modi!</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hex-container hex-container3">
-                    <div class="hex hex3">
-                        <div class="text">
-                            <h1>Hobbies:</h1>
-                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet.</p> -->
-                            <ul class="list">
-                                <li>Programming</li>
-                                <li>Astronomy</li>
-                                <li>Video Gaming</li>
-                            </ul>
-                        </div>
-                        <div class="back">
-                            <h1>Test</h1>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga eveniet velit vel delectus nam?</p>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- .inner-container -->
-        </section>
-
-      <section class="projects">
+    <section class="projects">
         <h1>Projects</h1>
         <hr>
 
@@ -176,7 +165,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="card">
                 <div class="image"></div>
                 <div class="description">
@@ -192,7 +181,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="card">
                 <div class="image"></div>
                 <div class="description">
@@ -225,11 +214,11 @@
                 </div>
             </div>
         </div>
-      </section>
+    </section>
 
       <!-- Testimonial section -->
 
-      <section class="testimonials">
+    <section class="testimonials">
         <h1>Testimonials</h1>
         <hr>
 
@@ -238,9 +227,10 @@
         <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus temporibus nobis eum ipsum dolores quidem aut laborum perferendis dolorum libero.</p>
         <p class="author">- Somebody</p>
 
-      </section>
+        </section>
 
-      <section class="contact">
+        <!-- Contact me section -->
+    <section class="contact">
         <h1>Contact Me</h1>
         <hr>
 
@@ -251,30 +241,31 @@
             <textarea id="message" name="message" class="form-input" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send" class="form-button btn">
         </form>
-      </section>
+    </section>
 
-      <footer>Copyright &copy; 2020 "Nikolay Lyutov" All rights reserved  </footer>
+    <footer>Copyright &copy; 2020 "Nikolay Lyutov" All rights reserved  </footer>
 
       <!-- Modals -->
 
-      <div id="cvDIV" class="modal">
+    <div id="cvDIV" class="modal">
         <div class="model-content">
-            <iframe src="public/pdf/cv.pdf" ></iframe>
+            <!-- <iframe src="public/pdf/cv.pdf" frameBorder=0></iframe> -->
+            <iframe src="https://docs.google.com/gview?url=http://fornaxelit.epizy.com/cv.pdf&embedded=true" frameBorder=0></iframe>
         </div>
-      </div>
+    </div>
 
-      <div id="gpaDIV" class="modal">
+    <div id="gpaDIV" class="modal">
         <div class="model-content">
-            <iframe src="public/pdf/transcript.pdf" ></iframe>
+            <iframe src="public/pdf/transcript.pdf" frameBorder=0></iframe>
         </div>
-      </div>
+    </div>
 
-      <div id="deanDIV" class="modal">
+    <div id="deanDIV" class="modal">
         <div class="model-content">
-            <iframe src="public/pdf/dean.pdf" ></iframe>
+            <iframe src="public/pdf/dean.pdf" frameBorder=0></iframe>
         </div>
-      </div>
+    </div>
 
-      <script src="public/script.js"></script>
+    <script src="public/script.js"></script>
 </body>
 </html>

@@ -50,7 +50,7 @@ $(window).on("scroll", () => {
         
         // Test for logo
         // $(".custom").css("display", "block"); 
-        $(".custom").addClass("logoAnimation");
+        $(".logo").addClass("logoAnimation");
     }
     
 
@@ -61,7 +61,7 @@ $(window).on("scroll", () => {
         $(".sidemenu").removeClass("add");
         $("header h2").removeClass("animate");
         // $(".custom").css("display", "none"); 
-        $(".custom").removeClass("logoAnimation");
+        $(".logo").removeClass("logoAnimation");
     }
 });
 
@@ -119,4 +119,8 @@ $("#dean").on("click", () => {
     deanModal.css("display", "flex");
 });
 
+
+$("#udemy").on("click", () => {
+    alert("hooery");
+});
 
