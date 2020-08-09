@@ -1,11 +1,21 @@
 # Portfolio
 
+## Description
 This is my personal portfolio. The theme of the project was inspired by and reflects my personal interests: technology and astronomy.
 
-Find a live demo [here](http://fornaxelit.com)
+Live [demo](http://fornaxelit.com)
 
-## Technologies used:
+## Technologies used
 
-The site was made using HTML5, CSS3 and jQuery.
+#### Fron-End:
+The portfolio is made by using pure HTML5, CSS3 and jQuery.
 
-Nodemailer is used to sent emails. Furthermore the site is delpoyed using heroku.
+#### Back-End:
+Node.js (Nodemailer) is used for the email system. 
+The site is deployed using Heroku.
+
+## Acknowledgment
+Logo made by [](https://instagram.com)
+
+<!-- ## License
+MIT -->
