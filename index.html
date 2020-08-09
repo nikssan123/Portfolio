@@ -14,16 +14,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     
     
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
 
     <div class="sidemenu">
         <ul class="menu">
-            <li><a href="https://www.facebook.com/nikolay.lyutov" target="blank"><i class="fa fa-facebook"></i></a></li>
+            <!-- <li><a href="https://www.facebook.com/nikolay.lyutov" target="blank"><i class="fa fa-facebook"></i></a></li> -->
             <li><a href="https://www.linkedin.com/in/nikolay-lyutov-52b9931a8/" target="blank"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/nikssan123/" target="blank"><i class="fa fa-instagram"></i></a></li>
+            <!-- <li><a href="https://www.instagram.com/nikssan123/" target="blank"><i class="fa fa-instagram"></i></a></li> -->
             <li><a href="https://github.com/nikssan123" target="blank"><i class="fa fa-github"></i></a></li>
             <!-- <li><a><i class="fa fa-linkedin"></i></a></li> -->
         </ul>
@@ -72,7 +72,7 @@
         <hr>
         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aspernatur, repudiandae corrupti tempore quos ipsa accusantium animi accusamus explicabo praesentium, incidunt quia ad sequi? Esse, tempore nostrum facere, quibusdam illum commodi quo accusamus ex amet vel doloremque est, laborum vero dolorum voluptas ab dicta delectus ipsum similique? Facere, corrupti fugiat!</p> -->
         <p>Hello, my name is <span class="bold">Nikolay Lyutov</span> and I'm from Varna, Bulgaria. Currently, I'm a junior <span class="bold">Computer Science student</span> in the American University in Bulgaria (AUBG). Personally, I'm always striving to be the best and always aiming high! Moreover, I'm eagerly looking forward for new opportunities and challenges and I'm impatient to find what the near future will unfold. </p>
-        <a onclick="viewCV()" class="btn">View CV</a>
+        <a onclick="viewCV()" class="btn">View Resume</a>
 
         
         <!-- Hexagons -->
@@ -137,8 +137,8 @@
                         </ul>
                     </div>
                     <div class="back">
-                        <h1>Test</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga eveniet velit vel delectus nam?</p>
+                        <!-- <h1></h1> -->
+                        <p id="hobby-back">I consider myself to be a curious guy, so I have a lot of interests. However, my main interest always revolves around technology and physics.</p>
                     </div>
                 </div>
             </div>
@@ -151,65 +151,68 @@
 
         <div class="container">
             <div class="card">
-                <div class="image"></div>
+                <div class="image android"><h1 class="card-title">Educational App</h1></div>
                 <div class="description">
-                    <h2>Project 1</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi autem optio magnam asperiores ab? Expedita!</p>
+                    <!-- <h2>Educational App</h2> -->
+                    <p>An android app, which aims to provide additional help to Bulgarian high school students for their state exam. The app is published on the google play market and has over 10, 000 downloads and 99 reviews for an average of 4.5 stars.</p>
                 </div>
                 <div class="buttons">
-                    <div class="code"><p>Code</p></div>
-                    <div class="demo"><p>Live Demo</p></div>
+                    <div class="code"><a target="blank" href="https://github.com/nikssan123/educational-android-app">Code</a></div>
+                    <div class="demo"><a target="blank" href="https://play.google.com/store/apps/details?id=com.FornaxElit.MaturaBel">Live Demo</a></div>
                     <div class="stack"><p>Stack: </p>
-                        <img src="public/img/icons/java.png" alt="Java icon">
-                        <img src="public/img/icons/android.png" alt="Android icon">
+                        <img class="icon" src="public/img/icons/java.png" alt="Java icon">
+                        <img class="icon" src="public/img/icons/android2.png" alt="Android icon">
                     </div>
                 </div>
             </div>
 
             <div class="card">
-                <div class="image"></div>
+                <div class="image warbler"><h1 class="card-title">Warbler</h1></div>
                 <div class="description">
-                    <h2>Project 2</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi autem optio magnam asperiores ab? Expedita!</p>
+                    <!-- <h2>Warbler</h2> -->
+                    <p>A social media clone, Warbler provides its users with the ability to post messages in a twitter like manner. It also provides direct message capabilities and account customization.</p>
                 </div>
                 <div class="buttons">
-                    <div class="code"><p>Code</p></div>
-                    <div class="demo"><p>Live Demo</p></div>
+                    <div class="code"><a target="blank" href="https://github.com/nikssan123/Twitter-Clone">Code</a></div>
+                    <div class="demo"><a target="blank" href="http://warbler.fornaxelit.com">Live Demo</a></div>
                     <div class="stack"><p>Stack: </p>
-                        <img src="public/img/icons/java.png" alt="Java icon">
-                        <img src="public/img/icons/android.png" alt="Android icon">
+                        <img class="icon" src="public/img/icons/mongo.png" alt="MongoDB icon">
+                        <img src="public/img/icons/express.png" width="50px" alt="Express icon">
+                        <img class="icon" src="public/img/icons/react.png"   alt="React icon">
+                        <img class="icon" src="public/img/icons/nodejs.png" alt="NodeJS icon">
                     </div>
                 </div>
             </div>
 
             <div class="card">
-                <div class="image"></div>
+                <div class="image camp"><h1 class="card-title">Camp</h1></div>
                 <div class="description">
-                    <h2>Project 3</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi autem optio magnam asperiores ab? Expedita!</p>
+                    <!-- <h2>Camp</h2> -->
+                    <p>A site built around the concept of a social media app, but targets primarily adventurous people with a love for nature and camping. The users of the site can share their stories which are connected to a certain place.</p>
                 </div>
                 <div class="buttons">
-                    <div class="code"><p>Code</p></div>
-                    <div class="demo"><p>Live Demo</p></div>
+                    <div class="code"><a target="blank" href="https://github.com/nikssan123/camp-udemy-project">Code</a></div>
+                    <div class="demo"><a target="blank" href="http://camp.fornaxelit.com">Live Demo</a></div>
                     <div class="stack"><p>Stack: </p>
-                        <img src="public/img/icons/java.png" alt="Java icon">
-                        <img src="public/img/icons/android.png" alt="Android icon">
+                        <img class="icon" src="public/img/icons/mongo.png" alt="MongoDB icon">
+                        <img src="public/img/icons/express.png" width="50px" alt="Express icon">
+                        <img width="40px" src="public/img/icons/nodejs.png" alt="NodeJS icon">
                     </div>
                 </div>
             </div>
 
             <div class="card">
-                <div class="image"></div>
+                <div class="image console"><h1 class="card-title">Course Project </h1></div>
                 <div class="description">
-                    <h2>Project 4</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi autem optio magnam asperiores ab? Expedita!</p>
+                    <!-- <h2>Course Project</h2> -->
+                    <p>A console application written in C++ as a course project for one of my university courses. It employs different algorithms like Merge-Sort and Boyer-Moore String Pattern Matching algorithm. </p>
                 </div>
                 <div class="buttons">
-                    <div class="code"><p>Code</p></div>
-                    <div class="demo"><p>Live Demo</p></div>
+                    <div class="code"><a target="blank" href="https://github.com/nikssan123/CS221a-course-project-algorithms">Code</a></div>
+                    <div class="demo course-project-link">Live Demo</div>
                     <div class="stack"><p>Stack: </p>
-                        <img src="public/img/icons/java.png" alt="Java icon">
-                        <img src="public/img/icons/android.png" alt="Android icon">
+                        <img class="icon" src="public/img/icons/c++.png" alt="C++ icon">
+                        <img class="icon" src="public/img/icons/vs.png" alt="VS icon">
                     </div>
                 </div>
             </div>
@@ -218,7 +221,7 @@
 
       <!-- Testimonial section -->
 
-    <section class="testimonials">
+    <!-- <section class="testimonials">
         <h1>Testimonials</h1>
         <hr>
 
@@ -227,7 +230,7 @@
         <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus temporibus nobis eum ipsum dolores quidem aut laborum perferendis dolorum libero.</p>
         <p class="author">- Somebody</p>
 
-        </section>
+    </section> -->
 
         <!-- Contact me section -->
     <section class="contact">
@@ -250,19 +253,25 @@
     <div id="cvDIV" class="modal">
         <div class="model-content">
             <!-- <iframe src="public/pdf/cv.pdf" frameBorder=0></iframe> -->
-            <iframe src="https://docs.google.com/gview?url=http://fornaxelit.epizy.com/cv.pdf&embedded=true" frameBorder=0></iframe>
+            <iframe src="https://docs.google.com/gview?url=http://fornaxelit.epizy.com/resume.pdf&embedded=true" frameBorder=0></iframe>
         </div>
     </div>
 
     <div id="gpaDIV" class="modal">
         <div class="model-content">
-            <iframe src="public/pdf/transcript.pdf" frameBorder=0></iframe>
+            <iframe src="https://docs.google.com/gview?url=http://fornaxelit.epizy.com/transcript.pdf&embedded=true" frameBorder=0></iframe>
         </div>
     </div>
 
     <div id="deanDIV" class="modal">
         <div class="model-content">
-            <iframe src="public/pdf/dean.pdf" frameBorder=0></iframe>
+            <iframe src="https://docs.google.com/gview?url=http://fornaxelit.epizy.com/dean.pdf&embedded=true" frameBorder=0></iframe>
+        </div>
+    </div>
+
+    <div id="udemyDIV" class="modal">
+        <div class="model-content">
+            <iframe src="https://docs.google.com/gview?url=http://fornaxelit.epizy.com/certificate.pdf&embedded=true" frameBorder=0></iframe>
         </div>
     </div>
 

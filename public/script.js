@@ -86,13 +86,13 @@ function testimonials(){
     $(".testimonials").get(0).scrollIntoView();
 }
 
-$(".buttons .code").on("click", () => {
-    alert("Show code");
-});
+// $(".buttons .code").on("click", () => {
+//     alert("Show code");
+// });
 
-$(".buttons .demo").on("click", () => {
-    alert("Show demo");
-});
+// $(".buttons .demo").on("click", () => {
+//     alert("Show demo");
+// });
 
 // Modals
 
@@ -105,6 +105,7 @@ window.onclick = event => {
 const cvModal = $("div#cvDIV");
 const gpaModal = $("div#gpaDIV");
 const deanModal = $("div#deanDIV");
+const udemyModal = $("div#udemyDIV");
 
 
 function viewCV(){
@@ -121,6 +122,6 @@ $("#dean").on("click", () => {
 
 
 $("#udemy").on("click", () => {
-    alert("hooery");
+    udemyModal.css("display", "flex");
 });
 
