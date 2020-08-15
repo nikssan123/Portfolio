@@ -278,6 +278,14 @@ header h2 a{
     z-index: -1;
 }
 
+.logo-main{
+    display: flex;
+    align-items: center; 
+}
+
+#logo{
+    margin-right: 5px;
+}
 
 
 
@@ -1163,10 +1171,15 @@ footer{
 
     .logo{
         left: -30px;
+        width: 25;
     }
 
     .sidemenu{
         right: -20px;
+    }
+
+    .btn{
+        padding: 20px 50px;
     }
 }
 

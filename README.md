@@ -15,7 +15,7 @@ Node.js (Nodemailer) is used for the email system.
 The site is deployed using Heroku.
 
 ## Acknowledgment
-Logo made by [](https://instagram.com)
+Logo made by [Alexander Uzunov](https://www.instagram.com/alex.uz3311.2/)
 
 <!-- ## License
 MIT -->
