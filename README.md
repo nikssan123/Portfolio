@@ -17,5 +17,5 @@ The site is deployed using Heroku.
 ## Acknowledgment
 Logo made by [Alexander Uzunov](https://www.instagram.com/alex.uz3311.2/)
 
-<!-- ## License
-MIT -->
+## License
+MIT

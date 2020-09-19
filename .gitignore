@@ -2,3 +2,5 @@
 /node_modules
 *.csr
 *.key
+debug.log
+debug
