@@ -6,16 +6,12 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
-
 dotenv.config();
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use("/public", express.static('public'));
-
-
+app.use("/public", express.static("public"));
 
 app.post("/mail", (req, res) => {
-
     // console.log(req.body.name);
     const transport = nodemailer.createTransport({
         host: "smtp.gmail.com",
@@ -24,26 +20,33 @@ app.post("/mail", (req, res) => {
             user: "fornax.elit@gmail.com",
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-            refreshToken: process.env.GOOGLE_REFRESH_TOKEN                              
-        }
+            refreshToken: process.env.GOOGLE_REFRESH_TOKEN,
+        },
     });
-    
+
     const mailOptions = {
         to: "nikssan123@gmail.com",
         from: "fornax.elit@gmail.com",
         subject: req.body.name + " wants to connect!",
-        text: "Email: " + req.body.mail + "\nPhone: " + req.body.phone + "\nMessage: " + req.body.message
+        text:
+            "Email: " +
+            req.body.mail +
+            "\nPhone: " +
+            req.body.phone +
+            "\nMessage: " +
+            req.body.message,
     };
-    
-    //send the actual mail
-    transport.sendMail(mailOptions).then(() => {
-        res.redirect("/");
-    }).catch(err => {
-        console.log("work");
-        console.log(err);
-    });
-});
 
+    //send the actual mail
+    transport
+        .sendMail(mailOptions)
+        .then(() => {
+            res.redirect("/");
+        })
+        .catch(err => {
+            console.log(err);
+        });
+});
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname + "/index.html"));
